@@ -7,7 +7,10 @@ import android.support.test.runner.AndroidJUnit4;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.junit.Assert.*;
+import utils.LogUtils;
+import utils.UiUtils;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -20,7 +23,8 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
         assertEquals("cc.oldhunter.app.android", appContext.getPackageName());
+        UiUtils.showToast("xxffll");
+        LogUtils.e("xxff>>>");
     }
 }
